@@ -1,0 +1,74 @@
+{
+  "task": "logs-eval",
+  "condition": "subagents",
+  "role": "eval",
+  "error": null,
+  "timestamp": "2026-10-06T15:39:24.375232+00:00",
+  "skills_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "seconds": 201.0,
+  "tokens": {
+    "input": 260518,
+    "output": 14509,
+    "total": 275027
+  },
+  "tool_calls": 19,
+  "subagent_calls": 3,
+  "skills_read": 0,
+  "skills_modified": false,
+  "final_message": "[{'type': 'text', 'text': 'Created `workspace/errors.json` with 24 qualifying entries, UTC timestamps, and repeat markers applied. The weighted service totals are mailer: 8, queue-worker: 23, and scheduler: 21. Validation passed.', 'annotations': [], 'id': 'msg_07659a904fdea62d006ac516e2aa7c87d0997bd6dcf8d7d1f0', 'phase': 'final_answer'}]",
+  "score": 0.6,
+  "passed": 6,
+  "total": 10,
+  "checks": [
+    {
+      "name": "valid_structure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "entry_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "timestamps_utc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "levels_uppercase",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "repeat_counts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "counts_by_service",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_service_names",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "rule_sorted_errors",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "rule_schema_header",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "rule_source_line",
+      "passed": false,
+      "detail": ""
+    }
+  ]
+}
